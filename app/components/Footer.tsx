@@ -10,10 +10,11 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              <li><a href="/" className="hover:text-secondary">Home</a></li>
-              <li><a href="/about" className="hover:text-secondary">About</a></li>
-              <li><a href="/academics" className="hover:text-secondary">Academics</a></li>
-              <li><a href="/facilities" className="hover:text-secondary">Facilities</a></li>
+              <li><a href="/" className="hover:text-amber-200">Home</a></li>
+              <li><a href="#about" className="hover:text-amber-200">About</a></li>
+              <li><a href="#academics" className="hover:text-amber-200">Academics</a></li>
+              <li><a href="#facilities" className="hover:text-amber-200">Facilities</a></li>
+              <li><a href="#contact" className="hover:text-amber-200">Contact</a></li>
             </ul>
           </div>
           <div>
@@ -24,9 +25,9 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Follow Us</h3>
             <div className="flex space-x-4">
-              <a href="#" className="hover:text-secondary">Facebook</a>
-              <a href="#" className="hover:text-secondary">Instagram</a>
-              <a href="#" className="hover:text-secondary">YouTube</a>
+              <a href="#" className="hover:text-amber-200">Facebook</a>
+              <a href="#" className="hover:text-amber-200">Instagram</a>
+              <a href="#" className="hover:text-amber-200">YouTube</a>
             </div>
           </div>
         </div>

@@ -1,6 +1,6 @@
 export default function Admission() {
   return (
-    <section className="py-16 bg-primary text-white">
+    <section id="admission" className="py-16 bg-primary text-white">
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-3xl font-bold mb-8 font-heading">Admission Open</h2>
         <p className="mb-8">Join our family and start your journey towards excellence</p>

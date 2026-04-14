@@ -1,16 +1,14 @@
 import Header from './components/Header';
-import PrayerStrip from './components/PrayerStrip';
 import Hero from './components/Hero';
+import PrincipalMessage from './components/PrincipalMessage';
 import About from './components/About';
-import Leadership from './components/Leadership';
 import Academics from './components/Academics';
 import Facilities from './components/Facilities';
-import Activities from './components/Activities';
-import Gallery from './components/Gallery';
-import StudentBirthday from './components/StudentBirthday';
+import VideoSection from './components/VideoSection';
 import NewsUpdates from './components/NewsUpdates';
-import Admission from './components/Admission';
 import Testimonials from './components/Testimonials';
+import FAQ from './components/FAQ';
+import Gallery from './components/Gallery';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Chatbot from './components/Chatbot';
@@ -18,20 +16,18 @@ import WhatsAppButton from './components/WhatsAppButton';
 
 export default function Home() {
   return (
-    <div>
-      <PrayerStrip />
+    <div className="bg-white text-slate-900">
       <Header />
       <Hero />
+      <PrincipalMessage />
       <About />
-      <Leadership />
       <Academics />
       <Facilities />
-      <Activities />
-      <StudentBirthday />
+      <VideoSection />
       <NewsUpdates />
-      <Gallery />
-      <Admission />
       <Testimonials />
+      <FAQ />
+      <Gallery />
       <Contact />
       <Footer />
       <Chatbot />
