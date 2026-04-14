@@ -1,26 +1,52 @@
 export default function Contact() {
   return (
-    <section id="contact" className="py-16 bg-white">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-8 font-heading text-primary">Contact Us</h2>
-        <div className="grid md:grid-cols-2 gap-8">
-          <div>
-            <h3 className="text-xl font-semibold mb-4">Get in Touch</h3>
-            <p className="mb-2"><strong>Phone:</strong> 7054272888, 9935535005</p>
-            <p className="mb-4"><strong>Address:</strong> Pushp Nagar, Azamgarh</p>
-            <div className="mb-4">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3606.123456789012!2d83.123456!3d25.123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDA3JzI0LjQiTiA4M8KwMDcnMjQuMyJF!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin" width="100%" height="300" style={{border:0}} allowFullScreen loading="lazy"></iframe>
+    <section id="contact" className="py-20 bg-gradient-to-b from-slate-50 to-white">
+      <div className="max-w-7xl mx-auto px-4">
+        <div className="text-center mb-12">
+          <span className="inline-flex items-center gap-2 rounded-full bg-blue-100 px-4 py-2 text-sm font-semibold text-blue-700">
+            📞 Contact
+          </span>
+          <h2 className="mt-6 text-4xl md:text-5xl font-bold text-slate-900 font-poppins">Reach Out to SRPSS</h2>
+          <p className="mx-auto mt-4 max-w-2xl text-lg text-slate-600">
+            We’re here to answer your questions, guide your child’s next step, and welcome families to our campus.
+          </p>
+        </div>
+
+        <div className="grid gap-10 lg:grid-cols-2">
+          <div className="space-y-6 rounded-[2rem] border border-slate-200 bg-white p-10 shadow-xl">
+            <div>
+              <h3 className="text-xl font-semibold mb-3">Visit Us</h3>
+              <p className="text-slate-700">Pushp Nagar, Azamgarh</p>
             </div>
-            <a href="tel:7054272888" className="bg-primary text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-800 transition">Call Now</a>
+            <div>
+              <h3 className="text-xl font-semibold mb-3">Call Us</h3>
+              <p className="text-slate-700">7054272888</p>
+              <p className="text-slate-700">9935535005</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold mb-3">Email</h3>
+              <p className="text-slate-700">info@srpssschool.in</p>
+            </div>
+            <div className="grid gap-4 sm:grid-cols-2">
+              <a href="tel:7054272888" className="inline-flex items-center justify-center rounded-full bg-blue-700 px-6 py-3 text-sm font-semibold text-white shadow hover:bg-blue-800 transition">
+                Call Now
+              </a>
+              <a href="https://wa.me/917054272888?text=Hello%20SRPSS,%20I%20want%20to%20know%20about%20admission%20details." target="_blank" rel="noreferrer" className="inline-flex items-center justify-center rounded-full border border-blue-700 px-6 py-3 text-sm font-semibold text-blue-700 transition hover:bg-blue-50">
+                WhatsApp Chat
+              </a>
+            </div>
           </div>
-          <div>
-            <h3 className="text-xl font-semibold mb-4">Send us a Message</h3>
-            <form className="space-y-4">
-              <input type="text" placeholder="Your Name" className="w-full p-3 border rounded" />
-              <input type="email" placeholder="Your Email" className="w-full p-3 border rounded" />
-              <textarea placeholder="Your Message" className="w-full p-3 border rounded" rows={5}></textarea>
-              <button type="submit" className="bg-primary text-white px-6 py-3 rounded font-semibold hover:bg-blue-800 transition">Send Message</button>
-            </form>
+
+          <div className="rounded-[2rem] overflow-hidden border border-slate-200 shadow-xl">
+            <iframe
+              src="https://maps.google.com/maps?q=Pushp%20Nagar%20Azamgarh%20India&output=embed"
+              width="100%"
+              height="520"
+              className="border-0"
+              allowFullScreen
+              loading="lazy"
+              title="SRPSS Location"
+            ></iframe>
           </div>
         </div>
       </div>

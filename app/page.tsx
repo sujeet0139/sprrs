@@ -4,6 +4,7 @@ import PrincipalMessage from './components/PrincipalMessage';
 import About from './components/About';
 import Academics from './components/Academics';
 import Facilities from './components/Facilities';
+import Admission from './components/Admission';
 import VideoSection from './components/VideoSection';
 import NewsUpdates from './components/NewsUpdates';
 import Testimonials from './components/Testimonials';
@@ -23,6 +24,7 @@ export default function Home() {
       <About />
       <Academics />
       <Facilities />
+      <Admission />
       <VideoSection />
       <NewsUpdates />
       <Testimonials />

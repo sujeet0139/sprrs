@@ -4,7 +4,7 @@ export default function Logo() {
   return (
     <div className="flex items-center gap-3">
       <div className="relative w-14 h-14 shrink-0">
-        <Image src="/logo.png" alt="SRPSS Logo" fill className="object-contain" />
+        <Image src="/logo.svg" alt="SRPSS Logo" fill className="object-contain" />
       </div>
 
       <div className="hidden sm:block border-l-2 border-gray-300 pl-3">
