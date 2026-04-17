@@ -16,7 +16,12 @@ export default function Contact() {
           <div className="space-y-6 rounded-[2rem] border border-slate-200 bg-white p-10 shadow-xl">
             <div>
               <h3 className="text-xl font-semibold mb-3">Visit Us</h3>
-              <p className="text-slate-700">Pushp Nagar, Azamgarh</p>
+              <p className="text-slate-700">Shri Rama Prasad Singh Shiksha Sansthan</p>
+              <p className="text-slate-700">Deedarganj–Saraimeer Road, Pushpnagar</p>
+              <p className="text-slate-700">Post: Pushpnagar, Tehsil: Martinganj</p>
+              <p className="text-slate-700">Block: Phoolpur, Police Station: Deedarganj</p>
+              <p className="text-slate-700">District: Azamgarh, Uttar Pradesh – 223226</p>
+              <p className="text-slate-700">India</p>
             </div>
             <div>
               <h3 className="text-xl font-semibold mb-3">Call Us</h3>
@@ -39,7 +44,7 @@ export default function Contact() {
 
           <div className="rounded-[2rem] overflow-hidden border border-slate-200 shadow-xl">
             <iframe
-              src="https://maps.google.com/maps?q=Pushp%20Nagar%20Azamgarh%20India&output=embed"
+              src="https://maps.google.com/maps?q=Deedarganj%E2%80%93Saraimeer%20Road%2C%20Pushpnagar%2C%20Azamgarh%2C%20Uttar%20Pradesh%20223226%2C%20India&output=embed"
               width="100%"
               height="520"
               className="border-0"

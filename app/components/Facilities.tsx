@@ -1,10 +1,6 @@
 'use client';
 
-import { useState } from 'react';
-
 export default function Facilities() {
-  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
-
   const facilities = [
     {
       name: 'Smart Classes',
@@ -75,8 +71,6 @@ export default function Facilities() {
           {facilities.map((facility, index) => (
             <div
               key={index}
-              onMouseEnter={() => setHoveredIndex(index)}
-              onMouseLeave={() => setHoveredIndex(null)}
               className="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden h-full"
             >
               {/* Gradient background on hover */}

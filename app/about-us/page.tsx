@@ -69,7 +69,7 @@ export default function AboutPage() {
                 </div>
                 <div className="md:col-span-2">
                   <p className="text-gray-700 leading-relaxed mb-4">
-                    Late Shri Raam Prasad Singh was a visionary educator and philanthropist who believed that education was the foundation of a better society. His philosophy was simple yet profound: <span className="italic font-semibold text-blue-600">"Shiksha Se Hi Sambhav Hai"</span> (Everything is possible through education).
+                    Late Shri Raam Prasad Singh was a visionary educator and philanthropist who believed that education was the foundation of a better society. His philosophy was simple yet profound: <span className="italic font-semibold text-blue-600">&ldquo;Shiksha Se Hi Sambhav Hai&rdquo;</span> (Everything is possible through education).
                   </p>
                   <p className="text-gray-700 leading-relaxed mb-4">
                     With dedication and passion, he established this institution to make quality education accessible to all children, regardless of their background. He believed in holistic development - not just academic excellence, but also character building, discipline, and moral values.

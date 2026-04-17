@@ -1,16 +1,25 @@
 import Image from 'next/image';
 
-export default function Logo() {
-  return (
-    <div className="flex items-center gap-3">
-      <div className="relative w-14 h-14 shrink-0">
-        <Image src="/logo.png" alt="SRPSS Logo" fill className="object-contain" />
-      </div>
+type LogoProps = {
+  sizeClassName?: string;
+  className?: string;
+};
 
-      <div className="hidden sm:block border-l-2 border-gray-300 pl-3">
-        <p className="text-xs font-bold text-blue-900 leading-none">SRPSS</p>
-        <p className="text-xs text-amber-600 font-bold">Since 1986</p>
-      </div>
+export default function Logo({
+  sizeClassName = 'h-[64px] w-[64px]',
+  className = '',
+}: LogoProps) {
+  return (
+    <div
+      className={`relative ${sizeClassName} shrink-0 overflow-hidden rounded-[1.35rem] border border-blue-100 bg-white shadow-[0_14px_32px_rgba(15,23,42,0.18)] ${className}`}
+    >
+      <Image
+        src="/logo.svg"
+        alt="SRPSS Logo"
+        fill
+        className="object-contain p-1.5"
+        priority
+      />
     </div>
   );
 }

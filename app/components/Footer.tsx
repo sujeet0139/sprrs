@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Footer() {
   return (
     <footer className="bg-primary text-white py-8">
@@ -10,18 +12,22 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              <li><a href="/" className="hover:text-amber-200 transition">Home</a></li>
-              <li><a href="/#about" className="hover:text-amber-200 transition">About</a></li>
-              <li><a href="/#academics" className="hover:text-amber-200 transition">Academics</a></li>
-              <li><a href="/#facilities" className="hover:text-amber-200 transition">Facilities</a></li>
-              <li><a href="/#noticeboard" className="hover:text-amber-200 transition">Notice Board</a></li>
-              <li><a href="/#faq" className="hover:text-amber-200 transition">FAQ</a></li>
+              <li><Link href="/" className="hover:text-amber-200 transition">Home</Link></li>
+              <li><Link href="/about" className="hover:text-amber-200 transition">About</Link></li>
+              <li><Link href="/academics" className="hover:text-amber-200 transition">Academics</Link></li>
+              <li><Link href="/facilities" className="hover:text-amber-200 transition">Facilities</Link></li>
+              <li><Link href="/gallery" className="hover:text-amber-200 transition">Gallery</Link></li>
+              <li><Link href="/media" className="hover:text-amber-200 transition">Media</Link></li>
+              <li><Link href="/contact" className="hover:text-amber-200 transition">Contact</Link></li>
             </ul>
           </div>
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact</h3>
             <p>Phone: 7054272888, 9935535005</p>
-            <p>Pushp Nagar, Azamgarh</p>
+            <p>Deedarganj–Saraimeer Road, Pushpnagar</p>
+            <p>Post: Pushpnagar, Tehsil: Martinganj</p>
+            <p>Block: Phoolpur, Police Station: Deedarganj</p>
+            <p>Azamgarh, Uttar Pradesh – 223226</p>
           </div>
           <div>
             <h3 className="text-lg font-semibold mb-4">Follow Us</h3>

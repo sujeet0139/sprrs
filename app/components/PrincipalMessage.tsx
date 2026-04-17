@@ -1,12 +1,14 @@
 'use client';
 
+import Image from 'next/image';
+
 export default function PrincipalMessage() {
   return (
     <section id="principal" className="py-20 md:py-24 bg-gradient-to-br from-blue-50 via-white to-amber-50 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-12">
           <p className="inline-flex items-center gap-2 px-4 py-2 bg-amber-100 text-amber-700 rounded-full text-sm font-semibold uppercase tracking-[0.2em]">
-            Principal's Message
+            Principal&apos;s Message
           </p>
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mt-6 font-poppins">
             A warm welcome from our Principal
@@ -45,15 +47,19 @@ export default function PrincipalMessage() {
           </div>
 
           <div className="relative overflow-hidden rounded-[2rem] shadow-2xl">
-            <img
-              src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=80"
-              alt="Principal of the school"
-              className="w-full h-full object-cover"
-            />
+            <div className="relative aspect-[4/5] w-full">
+              <Image
+                src="/1.jpg"
+                alt="Principal of the school"
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
+            </div>
             <div className="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-slate-950/20 to-transparent"></div>
             <div className="absolute bottom-6 left-6 bg-white/90 rounded-3xl p-6 shadow-lg backdrop-blur-sm max-w-sm">
               <p className="text-sm uppercase tracking-[0.2em] text-amber-700 font-semibold">Principal</p>
-              <h3 className="text-2xl font-bold text-slate-900 mt-2">Dr. Priya Singh</h3>
+              <h3 className="text-2xl font-bold text-slate-900 mt-2">Mrs. Kusham Lata</h3>
               <p className="text-slate-600 mt-2 text-sm">Committed to developing confident students who excel in academics and life.</p>
             </div>
           </div>

@@ -1,122 +1,95 @@
 'use client';
 
-import { useState } from 'react';
+import Image from 'next/image';
 
 export default function Leadership() {
-  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
-
   const leaders = [
     {
       name: 'Mrs. Kusham Lata',
       position: 'Principal',
-      icon: '👩‍🏫',
-      color: 'from-blue-500 to-blue-600',
-      message: 'At Shri Rama Prasad Singh Shiksha Sansthan, we believe that education is not just about academic excellence but about shaping character and values. Our goal is to nurture students into confident, disciplined, and responsible individuals. We focus on holistic development through academics, cultural activities, and moral education. We are committed to providing a safe and inspiring learning environment for every child.'
+      image: '/1.jpg',
+      accent: 'from-blue-700 via-blue-600 to-cyan-500',
+      message:
+        'We believe every child deserves a learning environment built on care, discipline, and confidence. Our focus remains academic excellence with values, curiosity, and character at the center of every school day.'
     },
     {
       name: 'Mr. Krishna Kumar Singh',
       position: 'Director',
-      icon: '👨‍💼',
-      color: 'from-amber-500 to-amber-600',
-      message: 'Our institution has proudly served the community for over 40 years. We continuously strive to maintain high standards of education while adapting to modern learning methods. Our focus is on innovation, discipline, and overall personality development of students. We welcome parents to be a part of this journey in building a brighter future for their children.'
-    }
+      image: '/2.jpg',
+      accent: 'from-amber-500 via-orange-500 to-rose-500',
+      message:
+        'For decades, the school has grown by balancing strong tradition with modern opportunity. We continue to invest in infrastructure, teaching quality, and student development so families can trust the journey ahead.'
+    },
+    {
+      name: 'Late Shri Raam Prasad Singh',
+      position: 'Founder',
+      image: '/3.jpg',
+      accent: 'from-slate-800 via-slate-700 to-blue-700',
+      message:
+        'His vision was rooted in one conviction: education can transform families and communities. That founding spirit still guides our mission to make quality learning accessible, dignified, and deeply meaningful.'
+    },
   ];
 
   return (
-    <section className="py-20 md:py-24 bg-gradient-to-b from-white to-blue-50 relative overflow-hidden">
-      {/* Decorative background elements */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-blue-100 rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-amber-100 rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
+    <section id="leadership" className="relative overflow-hidden bg-[linear-gradient(180deg,#eef6ff_0%,#ffffff_48%,#f8fbff_100%)] py-20 md:py-24">
+      <div className="absolute inset-x-0 top-0 h-56 bg-[radial-gradient(circle_at_top,_rgba(30,64,175,0.18),_transparent_60%)]" />
+      <div className="absolute -left-24 top-24 h-64 w-64 rounded-full bg-amber-200/35 blur-3xl" />
+      <div className="absolute -right-16 bottom-12 h-72 w-72 rounded-full bg-blue-200/35 blur-3xl" />
 
-      <div className="max-w-7xl mx-auto px-4 relative z-10">
-        {/* Section Header */}
-        <div className="text-center mb-16">
-          <span className="inline-block px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold mb-4">
-            💬 Leadership Vision
-          </span>
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 font-poppins">
-            Leadership Messages
+      <div className="relative z-10 mx-auto max-w-7xl px-4">
+        <div className="mb-14 text-center">
+          <p className="inline-flex items-center gap-2 rounded-full bg-blue-100 px-4 py-2 text-sm font-semibold uppercase tracking-[0.2em] text-blue-700">
+            Our Leadership
+          </p>
+          <h2 className="mt-6 font-poppins text-4xl font-bold text-slate-900 md:text-5xl">
+            Guiding Vision, Daily Commitment
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Hear from our distinguished leaders about their vision for education and our institution
+          <p className="mx-auto mt-4 max-w-3xl text-lg text-slate-600">
+            Meet the leadership team shaping the school with academic purpose, long-term vision, and a deep commitment to student growth.
           </p>
         </div>
 
-        {/* Leadership Cards Grid */}
-        <div className="grid md:grid-cols-2 gap-8 lg:gap-10 mb-12">
+        <div className="grid gap-8 lg:grid-cols-3">
           {leaders.map((leader, index) => (
             <div
               key={index}
-              onMouseEnter={() => setHoveredIndex(index)}
-              onMouseLeave={() => setHoveredIndex(null)}
-              className="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden"
+              className="group overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-[0_20px_50px_rgba(15,23,42,0.08)] transition-transform duration-300 hover:-translate-y-1"
             >
-              {/* Gradient top border */}
-              <div className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r ${leader.color}`}></div>
-
-              {/* Card Content */}
-              <div className="p-8 md:p-10">
-                {/* Quote Icon */}
-                <div className="mb-6">
-                  <div className="text-5xl opacity-20 group-hover:opacity-40 transition-opacity">
-                    "
+              <div className={`h-2 bg-gradient-to-r ${leader.accent}`}></div>
+              <div className="p-6 sm:p-8">
+                <div className="mb-6 overflow-hidden rounded-[1.5rem] bg-slate-100">
+                  <div className="relative aspect-[4/3] w-full">
+                    <Image
+                      src={leader.image}
+                      alt={leader.name}
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                    <div className={`absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t ${leader.accent} opacity-60`} />
                   </div>
                 </div>
 
-                {/* Profile Section */}
-                <div className="mb-8 text-center">
-                  {/* Avatar with gradient border */}
-                  <div className={`w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-br ${leader.color} p-1 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300`}>
-                    <div className="w-full h-full bg-white rounded-full flex items-center justify-center text-6xl group-hover:text-7xl transition-all duration-300">
-                      {leader.icon}
-                    </div>
-                  </div>
-
-                  {/* Name */}
-                  <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2 font-poppins">
+                <div className="space-y-3">
+                  <span className={`inline-flex rounded-full bg-gradient-to-r ${leader.accent} px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-white`}>
+                    {leader.position}
+                  </span>
+                  <h3 className="font-poppins text-2xl font-bold text-slate-900">
                     {leader.name}
                   </h3>
-
-                  {/* Position */}
-                  <div className="flex items-center justify-center gap-2">
-                    <p className={`text-lg font-semibold text-transparent bg-clip-text bg-gradient-to-r ${leader.color}`}>
-                      {leader.position}
-                    </p>
-                  </div>
-                </div>
-
-                {/* Message */}
-                <p className="text-gray-700 leading-relaxed text-center md:text-left line-clamp-5 group-hover:line-clamp-none transition-all duration-300 mb-6 text-sm md:text-base">
-                  {leader.message}
-                </p>
-
-                {/* Read More indicator */}
-                <div className="flex items-center justify-center md:justify-start gap-2 text-blue-600 font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <span>Read Full Message</span>
-                  <i className="fas fa-arrow-right"></i>
+                  <p className="text-sm leading-7 text-slate-600 sm:text-base">
+                    {leader.message}
+                  </p>
                 </div>
               </div>
-
-              {/* Hover accent */}
-              <div className={`absolute bottom-0 left-0 w-0 h-1 bg-gradient-to-r ${leader.color} group-hover:w-full transition-all duration-500`}></div>
             </div>
           ))}
         </div>
 
-        {/* Vision Statement */}
-        <div className="bg-gradient-to-r from-blue-900 to-blue-800 text-white rounded-2xl p-12 shadow-xl relative overflow-hidden">
-          <div className="absolute inset-0 opacity-10">
-            <div className="absolute top-0 left-0">💡</div>
-            <div className="absolute bottom-0 right-0">📚</div>
-          </div>
-          <div className="relative z-10 max-w-3xl">
-            <p className="text-lg md:text-xl leading-relaxed mb-4">
-              <span className="font-bold">Our Collective Vision:</span> To create an educational environment where every student thrives academically, socially, and morally. We are committed to innovation, excellence, and the holistic development of our community.
-            </p>
-            <p className="text-blue-100 italic">
-              — The Leadership Team of Shri Rama Prasad Singh Shiksha Sansthan
-            </p>
-          </div>
+        <div className="mt-12 rounded-[2rem] bg-gradient-to-r from-blue-950 via-blue-900 to-blue-700 p-8 text-white shadow-[0_24px_60px_rgba(30,64,175,0.28)] sm:p-10">
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-200">Shared Vision</p>
+          <p className="mt-4 max-w-4xl text-lg leading-8 text-blue-50 md:text-xl">
+            We are committed to building a school culture where strong academics, moral values, and future-ready learning work together. Every decision is guided by student wellbeing, parent trust, and long-term excellence.
+          </p>
         </div>
       </div>
     </section>

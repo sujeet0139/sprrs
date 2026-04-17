@@ -1,17 +1,5 @@
 'use client';
 
-import { useState } from 'react';
-
-interface NewsItem {
-  id: number;
-  title: string;
-  date: string;
-  category: string;
-  image?: string;
-  excerpt: string;
-  content?: string;
-}
-
 export default function NewsUpdates() {
   const announcements = [
     {

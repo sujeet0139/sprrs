@@ -241,7 +241,7 @@ export default function FacilitiesPage() {
             <div className="text-6xl mb-6">🏫</div>
             <h2 className="text-4xl font-bold mb-6 font-poppins">Experience Our Campus</h2>
             <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-              Schedule a campus visit to see our state-of-the-art facilities in person. Our team would love to show you why SRPSS is the perfect place for your child's education.
+              Schedule a campus visit to see our state-of-the-art facilities in person. Our team would love to show you why SRPSS is the perfect place for your child&apos;s education.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a

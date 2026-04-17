@@ -121,7 +121,7 @@ export default function About() {
         <div className="bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 text-blue-900 rounded-2xl p-12 text-center shadow-xl">
           <p className="text-lg mb-2 font-semibold uppercase tracking-widest">Our Motto</p>
           <p className="text-4xl md:text-5xl font-bold font-poppins">
-            "शिक्षा से ही संभव है"
+            &ldquo;शिक्षा से ही संभव है&rdquo;
           </p>
           <p className="text-xl mt-4 font-semibold">
             Everything is Possible Through Education

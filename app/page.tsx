@@ -1,38 +1,36 @@
+import AnnouncementBanner from './components/AnnouncementBanner';
 import Header from './components/Header';
-import Hero from './components/Hero';
-import PrincipalMessage from './components/PrincipalMessage';
+import MainBanner from './components/MainBanner';
 import About from './components/About';
-import Academics from './components/Academics';
-import Facilities from './components/Facilities';
-import Admission from './components/Admission';
-import VideoSection from './components/VideoSection';
+import Leadership from './components/Leadership';
+import Teachers from './components/Teachers';
+import FacilitiesPreview from './components/FacilitiesPreview';
+import Gallery from './components/Gallery';
 import NewsUpdates from './components/NewsUpdates';
 import Testimonials from './components/Testimonials';
+import AwardsAffiliations from './components/AwardsAffiliations';
 import FAQ from './components/FAQ';
-import Gallery from './components/Gallery';
-import Contact from './components/Contact';
+import ContactCTA from './components/ContactCTA';
 import Footer from './components/Footer';
-import Chatbot from './components/Chatbot';
 import WhatsAppButton from './components/WhatsAppButton';
 
 export default function Home() {
   return (
     <div className="bg-white text-slate-900">
+      <AnnouncementBanner />
       <Header />
-      <Hero />
-      <PrincipalMessage />
+      <MainBanner />
       <About />
-      <Academics />
-      <Facilities />
-      <Admission />
-      <VideoSection />
+      <Leadership />
+      <Teachers />
+      <FacilitiesPreview />
+      <Gallery />
       <NewsUpdates />
       <Testimonials />
+      <AwardsAffiliations />
       <FAQ />
-      <Gallery />
-      <Contact />
+      <ContactCTA />
       <Footer />
-      <Chatbot />
       <WhatsAppButton />
     </div>
   );

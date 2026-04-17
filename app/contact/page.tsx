@@ -16,7 +16,7 @@ export default function ContactPage() {
         <section className="bg-gradient-to-r from-blue-900 via-blue-800 to-blue-900 text-white py-20">
           <div className="max-w-7xl mx-auto px-4 text-center">
             <h1 className="text-5xl font-bold mb-4 font-poppins">Get in Touch</h1>
-            <p className="text-xl text-blue-100">We'd love to hear from you!</p>
+            <p className="text-xl text-blue-100">We&apos;d love to hear from you!</p>
           </div>
         </section>
 
@@ -51,8 +51,14 @@ export default function ContactPage() {
                       <h3 className="text-xl font-bold text-gray-900 mb-2">Address</h3>
                       <p className="text-gray-600 text-lg">
                         Shri Rama Prasad Singh Shiksha Sansthan<br />
-                        Pushp Nagar, Azamgarh<br />
-                        Uttar Pradesh, India
+                        Deedarganj–Saraimeer Road, Pushpnagar<br />
+                        Post: Pushpnagar<br />
+                        Tehsil: Martinganj<br />
+                        Block: Phoolpur<br />
+                        Police Station: Deedarganj<br />
+                        District: Azamgarh<br />
+                        Uttar Pradesh – 223226<br />
+                        India
                       </p>
                     </div>
                   </div>
@@ -157,7 +163,7 @@ export default function ContactPage() {
             <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center font-poppins">Find Us on Map</h2>
             <div className="rounded-3xl overflow-hidden shadow-xl h-96 md:h-[500px]">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3594.5622584918497!2d83.18631597523053!3d26.042203459999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399440ad2d7a0001%3A0x1234567890abcdef!2sPushp%20Nagar%2C%20Azamgarh!5e0!3m2!1sen!2sin!4v1234567890"
+                src="https://maps.google.com/maps?q=Deedarganj%E2%80%93Saraimeer%20Road%2C%20Pushpnagar%2C%20Azamgarh%2C%20Uttar%20Pradesh%20223226%2C%20India&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useMemo } from 'react';
 
 interface Birthday {
   id: number;
@@ -10,33 +10,25 @@ interface Birthday {
   image?: string;
 }
 
+const birthdayData: Birthday[] = [
+  { id: 1, name: 'Arjun Singh', date: '2024-04-18', class: '10-A', image: '👦' },
+  { id: 2, name: 'Priya Sharma', date: '2024-04-20', class: '9-B', image: '👧' },
+  { id: 3, name: 'Rahul Kumar', date: '2024-04-22', class: '8-C', image: '👦' },
+  { id: 4, name: 'Anjali Singh', date: '2024-04-25', class: '11-A', image: '👧' },
+  { id: 5, name: 'Vikram Patel', date: '2024-04-28', class: '7-B', image: '👦' },
+  { id: 6, name: 'Neha Verma', date: '2024-05-02', class: '12-A', image: '👧' },
+];
+
 export default function StudentBirthday() {
-  const [birthdays, setBirthdays] = useState<Birthday[]>([]);
-  const [upcomingBirthdays, setUpcomingBirthdays] = useState<Birthday[]>([]);
-
-  useEffect(() => {
-    // Sample birthday data - can be replaced with API call
-    const birthdayData: Birthday[] = [
-      { id: 1, name: 'Arjun Singh', date: '2024-04-18', class: '10-A', image: '👦' },
-      { id: 2, name: 'Priya Sharma', date: '2024-04-20', class: '9-B', image: '👧' },
-      { id: 3, name: 'Rahul Kumar', date: '2024-04-22', class: '8-C', image: '👦' },
-      { id: 4, name: 'Anjali Singh', date: '2024-04-25', class: '11-A', image: '👧' },
-      { id: 5, name: 'Vikram Patel', date: '2024-04-28', class: '7-B', image: '👦' },
-      { id: 6, name: 'Neha Verma', date: '2024-05-02', class: '12-A', image: '👧' },
-    ];
-
-    setBirthdays(birthdayData);
-
-    // Filter upcoming birthdays (next 30 days)
+  const birthdays = birthdayData;
+  const upcomingBirthdays = useMemo(() => {
     const today = new Date();
     const next30Days = new Date(today.getTime() + 30 * 24 * 60 * 60 * 1000);
 
-    const upcoming = birthdayData.filter(bd => {
+    return birthdayData.filter((bd) => {
       const birthDate = new Date(bd.date);
       return birthDate >= today && birthDate <= next30Days;
     });
-
-    setUpcomingBirthdays(upcoming);
   }, []);
 
   return (
@@ -113,7 +105,7 @@ export default function StudentBirthday() {
 
                     {/* Birthday message */}
                     <p className="text-center text-sm text-gray-600 italic">
-                      "Wishing you a fantastic birthday!"
+                      &ldquo;Wishing you a fantastic birthday!&rdquo;
                     </p>
                   </div>
 
@@ -169,7 +161,7 @@ export default function StudentBirthday() {
             </h3>
             <p className="text-lg mb-6 text-blue-100">
               Every student birthday is special at Shri Rama Prasad Singh Shiksha Sansthan. 
-              We believe in celebrating each child's unique journey and achievements!
+              We believe in celebrating each child&apos;s unique journey and achievements!
             </p>
             <button className="bg-white text-blue-700 px-8 py-3 rounded-full font-bold hover:bg-blue-50 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
               Learn More About Our Culture

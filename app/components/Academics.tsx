@@ -1,10 +1,6 @@
 'use client';
 
-import { useState } from 'react';
-
 export default function Academics() {
-  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
-
   const academicLevels = [
     {
       level: 'Primary',
@@ -85,8 +81,6 @@ export default function Academics() {
           {academicLevels.map((program, index) => (
             <div
               key={index}
-              onMouseEnter={() => setHoveredIndex(index)}
-              onMouseLeave={() => setHoveredIndex(null)}
               className="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden h-full"
             >
               {/* Gradient background on hover */}
