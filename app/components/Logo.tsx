@@ -14,7 +14,7 @@ export default function Logo({
       className={`relative ${sizeClassName} shrink-0 overflow-hidden rounded-[1.35rem] border border-blue-100 bg-white shadow-[0_14px_32px_rgba(15,23,42,0.18)] ${className}`}
     >
       <Image
-        src="/logo.svg"
+        src="/logo2.png"
         alt="SRPSS Logo"
         fill
         className="object-contain p-1.5"
