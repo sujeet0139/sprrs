@@ -1,5 +1,7 @@
 import Header from '@/app/components/Header';
 import Footer from '@/app/components/Footer';
+import ParentFeedbackForm from '@/app/components/ParentFeedbackForm';
+import AnimatedCounter from '@/app/components/AnimatedCounter';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -73,6 +75,86 @@ export default function AboutPage() {
                   <li>✔️ Regular co-curricular and leadership activities</li>
                   <li>✔️ Family-friendly support and communication</li>
                 </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Parent Trust Section */}
+        <section className="py-20 bg-gradient-to-r from-green-50 to-blue-50">
+          <div className="max-w-7xl mx-auto px-4">
+            <div className="text-center mb-12">
+              <h2 className="text-4xl font-bold text-slate-900 mb-6 font-poppins">Parent Trust & Confidence</h2>
+              <p className="text-lg text-slate-600 max-w-3xl mx-auto">
+                Our parents' trust is our greatest achievement. Here's what families say about choosing SRPSS for their children's education.
+              </p>
+            </div>
+
+            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+              <div className="bg-white rounded-2xl p-8 shadow-lg">
+                <div className="flex items-center gap-2 mb-4">
+                  <span className="text-2xl">👨‍👩‍👧‍👦</span>
+                  <h3 className="text-xl font-semibold text-slate-900">Family Values</h3>
+                </div>
+                <p className="text-slate-600 leading-relaxed">
+                  "The school upholds strong family values and creates a nurturing environment where our children feel safe and supported."
+                </p>
+                <p className="mt-4 font-semibold text-slate-800">- Parent Community</p>
+              </div>
+
+              <div className="bg-white rounded-2xl p-8 shadow-lg">
+                <div className="flex items-center gap-2 mb-4">
+                  <span className="text-2xl">🎓</span>
+                  <h3 className="text-xl font-semibold text-slate-900">Academic Excellence</h3>
+                </div>
+                <p className="text-slate-600 leading-relaxed">
+                  "Consistent academic results and dedicated teachers give us complete confidence in our children's educational journey."
+                </p>
+                <p className="mt-4 font-semibold text-slate-800">- Proud Parents</p>
+              </div>
+
+              <div className="bg-white rounded-2xl p-8 shadow-lg">
+                <div className="flex items-center gap-2 mb-4">
+                  <span className="text-2xl">🤝</span>
+                  <h3 className="text-xl font-semibold text-slate-900">Open Communication</h3>
+                </div>
+                <p className="text-slate-600 leading-relaxed">
+                  "Regular parent-teacher interactions and transparent communication build trust and partnership in education."
+                </p>
+                <p className="mt-4 font-semibold text-slate-800">- Engaged Families</p>
+              </div>
+            </div>
+
+            {/* Trust Metrics */}
+            <div className="mt-16 text-center">
+              <div className="bg-white rounded-2xl p-8 shadow-xl max-w-4xl mx-auto">
+                <h3 className="text-2xl font-bold text-slate-900 mb-8">Why Parents Choose SRPSS</h3>
+                <div className="grid gap-6 md:grid-cols-4">
+                  <div className="text-center">
+                    <div className="text-4xl font-bold text-blue-600 mb-2">
+                      <AnimatedCounter endValue={40} suffix="+" />
+                    </div>
+                    <div className="text-slate-600">Years of Excellence</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-4xl font-bold text-green-600 mb-2">
+                      <AnimatedCounter endValue={98} suffix="%" />
+                    </div>
+                    <div className="text-slate-600">Parent Satisfaction</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-4xl font-bold text-purple-600 mb-2">
+                      <AnimatedCounter endValue={500} suffix="+" />
+                    </div>
+                    <div className="text-slate-600">Students Enrolled</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-4xl font-bold text-amber-600 mb-2">
+                      <AnimatedCounter endValue={4.9} decimals={1} suffix="/5" />
+                    </div>
+                    <div className="text-slate-600">Average Rating</div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

@@ -1,10 +1,11 @@
 'use client';
 
 import Image from 'next/image';
-import { useRef } from 'react';
+import { useRef, useState, useEffect } from 'react';
 
 export default function TopperList() {
   const scrollRef = useRef<HTMLDivElement>(null);
+  const [isLoading, setIsLoading] = useState(true);
 
   const toppers = [
     // Class 5 Toppers
@@ -24,6 +25,14 @@ export default function TopperList() {
     { name: 'Ankit Kumar', className: 'Class 12', percentage: '98.8%', rank: 'Rank 2', image: '/img/student/1700578.jpg' },
     { name: 'Riya Patel', className: 'Class 12', percentage: '98.4%', rank: 'Rank 3', image: '/img/student/1700579.jpg' },
   ];
+
+  // Simulate a loading state (e.g., fetching from an API)
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 1500);
+    return () => clearTimeout(timer);
+  }, []);
 
   const scroll = (direction: 'left' | 'right') => {
     if (scrollRef.current) {
@@ -75,11 +84,20 @@ export default function TopperList() {
           ref={scrollRef}
           className="flex gap-6 md:gap-10 overflow-x-auto pb-10 pt-4 px-4 -mx-4 snap-x snap-mandatory [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]"
         >
-          {toppers.map((student, index) => (
-            <div
-              key={index}
-              className="relative w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 flex-shrink-0 snap-center rounded-full overflow-hidden group cursor-pointer shadow-xl border-4 border-amber-400 transform transition-all duration-500 hover:-translate-y-4 hover:rotate-3 hover:shadow-2xl bg-slate-200"
-            >
+          {isLoading ? (
+            // Skeleton Loading State
+            Array.from({ length: 5 }).map((_, index) => (
+              <div
+                key={`skeleton-${index}`}
+                className="relative w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 flex-shrink-0 snap-center rounded-full shadow-xl border-4 border-slate-200 bg-slate-300 animate-pulse"
+              />
+            ))
+          ) : (
+            toppers.map((student, index) => (
+              <div
+                key={index}
+                className="relative w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 flex-shrink-0 snap-center rounded-full overflow-hidden group cursor-pointer shadow-xl border-4 border-amber-400 transform transition-all duration-500 hover:-translate-y-4 hover:rotate-3 hover:shadow-2xl bg-slate-200"
+              >
               <Image
                 src={student.image}
                 alt={student.name}
@@ -104,7 +122,8 @@ export default function TopperList() {
               {/* Floating animation effect */}
               <div className="absolute -top-2 -right-2 w-6 h-6 bg-amber-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 animate-bounce"></div>
             </div>
-          ))}
+            ))
+          )}
         </div>
       </div>
     </section>

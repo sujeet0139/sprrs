@@ -1,0 +1,28 @@
+{
+  "coreValues": [
+    { "icon": "📚", "title": "Education", "desc": "Quality learning for all" },
+    { "icon": "⭐", "title": "Excellence", "desc": "Striving for the best" },
+    { "icon": "🤝", "title": "Integrity", "desc": "Honesty and ethics" },
+    { "icon": "🌍", "title": "Responsibility", "desc": "Social commitment" }
+  ],
+  "leadershipTeam": [
+    {
+      "name": "Mrs. Kusham Lata",
+      "position": "Principal",
+      "icon": "👩‍🏫",
+      "bio": "Visionary leader with deep commitment to educational excellence and student welfare."
+    },
+    {
+      "name": "Mr. Krishna Kumar Singh",
+      "position": "Director",
+      "icon": "👨‍💼",
+      "bio": "Strategic thinker focused on innovation, infrastructure, and holistic development."
+    },
+    {
+      "name": "Late Shri Raam Prasad Singh",
+      "position": "Founder",
+      "icon": "🙏",
+      "bio": "Visionary founder whose legacy continues to guide our institution."
+    }
+  ]
+}

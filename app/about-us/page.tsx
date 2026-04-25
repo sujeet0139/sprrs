@@ -1,6 +1,7 @@
 import Header from '@/app/components/Header';
 import Footer from '@/app/components/Footer';
 import { Metadata } from 'next';
+import aboutData from '@/app/about.json';
 
 export const metadata: Metadata = {
   title: 'About Us - Shri Rama Prasad Singh Shiksha Sansthan',
@@ -114,12 +115,7 @@ export default function AboutPage() {
           <div className="max-w-7xl mx-auto px-4">
             <h2 className="text-4xl font-bold text-center text-gray-900 mb-12 font-poppins">Our Core Values</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {[
-                { icon: '📚', title: 'Education', desc: 'Quality learning for all' },
-                { icon: '⭐', title: 'Excellence', desc: 'Striving for the best' },
-                { icon: '🤝', title: 'Integrity', desc: 'Honesty and ethics' },
-                { icon: '🌍', title: 'Responsibility', desc: 'Social commitment' },
-              ].map((value, idx) => (
+              {aboutData.coreValues.map((value, idx) => (
                 <div key={idx} className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all text-center hover:-translate-y-1">
                   <div className="text-4xl mb-4">{value.icon}</div>
                   <h4 className="text-xl font-bold text-gray-900 mb-2 font-poppins">{value.title}</h4>
@@ -135,26 +131,7 @@ export default function AboutPage() {
           <div className="max-w-7xl mx-auto px-4">
             <h2 className="text-4xl font-bold text-center text-gray-900 mb-12 font-poppins">Leadership Team</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {[
-                {
-                  name: 'Mrs. Kusham Lata',
-                  position: 'Principal',
-                  icon: '👩‍🏫',
-                  bio: 'Visionary leader with deep commitment to educational excellence and student welfare.'
-                },
-                {
-                  name: 'Mr. Krishna Kumar Singh',
-                  position: 'Director',
-                  icon: '👨‍💼',
-                  bio: 'Strategic thinker focused on innovation, infrastructure, and holistic development.'
-                },
-                {
-                  name: 'Late Shri Raam Prasad Singh',
-                  position: 'Founder',
-                  icon: '🙏',
-                  bio: 'Visionary founder whose legacy continues to guide our institution.'
-                },
-              ].map((member, idx) => (
+              {aboutData.leadershipTeam.map((member, idx) => (
                 <div key={idx} className="bg-gradient-to-br from-blue-50 to-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all border-t-4 border-blue-600">
                   <div className="text-6xl mb-4 text-center">{member.icon}</div>
                   <h3 className="text-2xl font-bold text-gray-900 text-center mb-2 font-poppins">{member.name}</h3>
