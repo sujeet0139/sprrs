@@ -11,13 +11,13 @@ export default function Logo({
 }: LogoProps) {
   return (
     <div
-      className={`relative ${sizeClassName} shrink-0 overflow-hidden rounded-[1.35rem] border border-blue-100 bg-white shadow-[0_14px_32px_rgba(15,23,42,0.18)] ${className}`}
+      className={`relative ${sizeClassName} shrink-0 overflow-hidden rounded-full border-2 border-amber-400 bg-blue-950 shadow-[0_4px_18px_rgba(30,58,138,0.35)] ${className}`}
     >
       <Image
-        src="/logo2.png"
-        alt="SRPSS Logo"
+        src="/logo.svg"
+        alt="SRPSS — Shri Rama Prasad Singh Shiksha Sansthan"
         fill
-        className="object-contain p-1.5"
+        className="object-contain"
         priority
       />
     </div>

@@ -129,7 +129,7 @@ vercel --prod
 ## 🔗 Links
 
 - **GitHub:** https://github.com/sujeet0139/sprrs
-- **Live Demo:** (After Vercel deployment)
+- **Live Demo:** https://sprsschool.com
 - **School Contact:** 7054272888
 
 ## 📞 Support
@@ -145,4 +145,3 @@ School website project - All rights reserved.
 **Status:** ✅ Production Ready  
 **Version:** 2.0.0  
 **Last Updated:** April 15, 2026  
-

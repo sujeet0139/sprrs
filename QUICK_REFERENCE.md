@@ -56,7 +56,7 @@ git push -u origin main
 5. Click "Deploy"
 6. **Done! 🎉** Your site is live in 1-2 minutes
 
-**Default URL**: `https://sprrs.vercel.app`
+**Live URL**: `https://sprsschool.com`
 
 ---
 
@@ -131,7 +131,7 @@ git push -u origin main
 - [ ] Select sprrs repository
 - [ ] Click Deploy
 - [ ] Wait 1-2 minutes
-- [ ] Visit https://sprrs.vercel.app
+- [ ] Visit https://sprsschool.com
 - [ ] Share with school
 
 ---
@@ -244,12 +244,11 @@ Complete guides available:
 
 **Current Status**: ✅ Production Ready
 
-**Live URL** (after Vercel deployment): 
-`https://sprrs.vercel.app`
+**Live URL**: 
+`https://sprsschool.com`
 
 ---
 
 **Version**: 2.0.0  
 **Last Updated**: April 15, 2026  
 **Status**: ✅ Ready for Production  
-

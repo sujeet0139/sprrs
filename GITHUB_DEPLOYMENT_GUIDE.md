@@ -67,7 +67,7 @@ git push -u origin main
 
 ✅ Your site will be live in 1-2 minutes!
 
-Default URL: `https://sprrs.vercel.app`
+Live URL: `https://sprsschool.com`
 
 ### Option 2: Deploy with Vercel CLI
 
@@ -249,4 +249,3 @@ git push -u origin main
 **Website Status**: ✅ Ready for Production
 **Last Updated**: April 15, 2026
 **Version**: 2.0.0
-

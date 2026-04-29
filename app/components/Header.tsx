@@ -56,13 +56,13 @@ export default function Header() {
 
           <div className="flex items-center gap-2 sm:gap-3">
             <div className="hidden items-center gap-3 md:flex">
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-slate-700 transition-transform hover:scale-110 hover:text-blue-700" title="Facebook" aria-label="Facebook">
+              <a href="https://www.facebook.com/srpssschool" target="_blank" rel="noopener noreferrer" className="text-slate-700 transition-transform hover:scale-110 hover:text-blue-700" title="Facebook" aria-label="Facebook">
                 <i className="fab fa-facebook text-lg"></i>
               </a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-slate-700 transition-transform hover:scale-110 hover:text-pink-600" title="Instagram" aria-label="Instagram">
+              <a href="https://www.instagram.com/srpssschool" target="_blank" rel="noopener noreferrer" className="text-slate-700 transition-transform hover:scale-110 hover:text-pink-600" title="Instagram" aria-label="Instagram">
                 <i className="fab fa-instagram text-lg"></i>
               </a>
-              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="text-slate-700 transition-transform hover:scale-110 hover:text-red-600" title="YouTube" aria-label="YouTube">
+              <a href="https://www.youtube.com/@srpssschool" target="_blank" rel="noopener noreferrer" className="text-slate-700 transition-transform hover:scale-110 hover:text-red-600" title="YouTube" aria-label="YouTube">
                 <i className="fab fa-youtube text-lg"></i>
               </a>
             </div>
@@ -101,13 +101,13 @@ export default function Header() {
               Admission Enquiry
             </Link>
             <div className="flex items-center gap-4 border-t border-slate-200 pt-3">
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-slate-700 hover:text-blue-700" aria-label="Facebook">
+              <a href="https://www.facebook.com/srpssschool" target="_blank" rel="noopener noreferrer" className="text-slate-700 hover:text-blue-700" aria-label="Facebook">
                 <i className="fab fa-facebook text-lg"></i>
               </a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-slate-700 hover:text-pink-600" aria-label="Instagram">
+              <a href="https://www.instagram.com/srpssschool" target="_blank" rel="noopener noreferrer" className="text-slate-700 hover:text-pink-600" aria-label="Instagram">
                 <i className="fab fa-instagram text-lg"></i>
               </a>
-              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="text-slate-700 hover:text-red-600" aria-label="YouTube">
+              <a href="https://www.youtube.com/@srpssschool" target="_blank" rel="noopener noreferrer" className="text-slate-700 hover:text-red-600" aria-label="YouTube">
                 <i className="fab fa-youtube text-lg"></i>
               </a>
             </div>

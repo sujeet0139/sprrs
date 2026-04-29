@@ -269,7 +269,7 @@ school/
 ### Next Steps
 1. **Push to GitHub** (See GITHUB_DEPLOYMENT_GUIDE.md)
 2. **Deploy on Vercel** (One-click from GitHub)
-3. **Live URL**: `https://sprrs.vercel.app`
+3. **Live URL**: `https://sprsschool.com`
 4. **Custom Domain**: (Optional setup)
 
 ---
@@ -351,4 +351,3 @@ school/
 **Date**: April 15, 2026  
 **Status**: ✅ Production Ready  
 **Tech Stack**: Next.js 16 + React 19 + Tailwind CSS 4  
-

@@ -6,6 +6,8 @@ import Academics from './components/Academics';
 import Leadership from './components/Leadership';
 import Teachers from './components/Teachers';
 import TopperList from './components/TopperList';
+import BoardResults from './components/BoardResults';
+import AdmissionSteps from './components/AdmissionSteps';
 import FacilitiesPreview from './components/FacilitiesPreview';
 import Activities from './components/Activities';
 import Gallery from './components/Gallery';
@@ -50,6 +52,8 @@ export default function Home() {
       <Leadership />
       <Teachers />
       <TopperList />
+      <BoardResults />
+      <AdmissionSteps />
       <FacilitiesPreview />
       <Activities />
       <Gallery />

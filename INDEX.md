@@ -6,7 +6,7 @@
 **Status**: ✅ COMPLETE & PRODUCTION READY  
 **Version**: 2.0.0  
 **Date**: April 15, 2026  
-**Live URL**: https://sprrs.vercel.app (after deployment)  
+**Live URL**: https://sprsschool.com  
 
 ---
 
@@ -389,4 +389,3 @@ For deployment issues:
 **Version**: 2.0.0  
 **Date**: April 15, 2026  
 **Ready to Launch**: YES 🎉  
-

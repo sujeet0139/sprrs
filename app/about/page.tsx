@@ -1,7 +1,7 @@
 import Header from '@/app/components/Header';
 import Footer from '@/app/components/Footer';
 import ParentFeedbackForm from '@/app/components/ParentFeedbackForm';
-import AnimatedCounter from '@/app/components/AnimatedCounter';
+import AnimatedCounter from '@/app/AnimatedCounter';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {

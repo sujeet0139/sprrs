@@ -3,9 +3,9 @@
 export default function About() {
   const stats = [
     { icon: '📅', stat: '40+', label: 'Years of Excellence', color: 'from-blue-500 to-blue-600' },
-    { icon: '👨‍🎓', stat: '500+', label: 'Students Enrolled', color: 'from-amber-500 to-amber-600' },
-    { icon: '🎓', stat: '1-12', label: 'Classes Offered', color: 'from-green-500 to-green-600' },
-    { icon: '👨‍🏫', stat: '50+', label: 'Experienced Staff', color: 'from-purple-500 to-purple-600' }
+    { icon: '', stat: '98%', label: 'Board Pass Rate', color: 'from-amber-500 to-amber-600' },
+    { icon: '🏅', stat: '8', label: 'District Ranks', color: 'from-green-500 to-green-600' },
+    { icon: '👨‍🎓', stat: '500+', label: 'Happy Students', color: 'from-purple-500 to-purple-600' }
   ];
 
   return (
@@ -40,7 +40,7 @@ export default function About() {
                     40+ Years of Legacy
                   </h3>
                   <p className="text-gray-700 leading-relaxed">
-                    Established in 1986, our institution has been a beacon of quality education in Azamgarh. Founded by the visionary Late Shri Raam Prasad Singh, we continue his mission of providing excellence to all students.
+                    Established in 1986, our institution has been a beacon of quality education in Azamgarh. Founded by the visionary Late Shri Raam Prasad Singh, we continue his mission of providing excellence to all students, proudly producing district and state rank holders year after year.
                   </p>
                 </div>
               </div>
@@ -82,10 +82,10 @@ export default function About() {
                 <h3 className="text-3xl font-bold mb-6 font-poppins">Key Highlights</h3>
                 <div className="space-y-6">
                   {[
-                    { title: 'Education Quality', desc: 'Best-in-class curriculum & teaching methods' },
-                    { title: 'Holistic Development', desc: 'Sports, arts, and character building' },
-                    { title: 'Modern Infrastructure', desc: 'Smart classes, labs, and facilities' },
-                    { title: 'Experienced Faculty', desc: 'Dedicated educators with passion' }
+                    { title: 'Academic Excellence', desc: 'Consistent 98%+ board results with 42 top scorers (90%+)' },
+                    { title: 'Holistic Development', desc: 'A perfect balance of academics, sports, and character building' },
+                    { title: 'Modern Infrastructure', desc: 'Smart classes, equipped science labs, and a vast library' },
+                    { title: 'Expert Faculty', desc: 'Dedicated educators with 10 to 20+ years of teaching experience' }
                   ].map((item, idx) => (
                     <div key={idx} className="flex gap-4 items-start">
                       <span className="text-2xl flex-shrink-0">✨</span>

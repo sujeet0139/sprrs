@@ -50,7 +50,7 @@ export default function TopperList() {
           <div className="flex items-center gap-6">
             <div className="w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden border-4 border-amber-400 shadow-lg">
               <Image
-                src="/logo2.png"
+                src="/logo.svg"
                 alt="SRPSS Logo"
                 width={80}
                 height={80}

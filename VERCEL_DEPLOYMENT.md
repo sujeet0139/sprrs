@@ -34,7 +34,7 @@
 ### Step 4: Deploy
 1. Click "Deploy"
 2. Wait for build to complete (2-3 minutes)
-3. Once complete, you'll get a URL like: `https://sprrs.vercel.app`
+3. Once complete, you'll get a deployment URL. Your main site will be at `https://sprsschool.com` after you configure the custom domain.
 
 ### Step 5: Custom Domain (Optional)
 1. Go to Project Settings > Domains
@@ -366,4 +366,3 @@ git push origin main
 **Estimated Cost**: $0 (Free tier)
 
 ---
-
